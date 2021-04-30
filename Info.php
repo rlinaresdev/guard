@@ -1,5 +1,5 @@
 <?php
-namespace Vendor;
+namespace Malla\Guard;
 
 /*
  *---------------------------------------------------------
@@ -38,6 +38,6 @@ class Info {
   	}
 
   	public function handler($core) {
-  		$core->create($this->app())->addInfo($this->info())->addMeta("type", $this->meta());
+  		$core->create($this->app())->addInfo($this->info());
   	}
 }
